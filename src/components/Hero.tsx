@@ -67,7 +67,7 @@ export function Hero() {
             }}
           >
             <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#16a34a', display: 'inline-block' }} />
-            Promo: ₦100,000 website · Limited slots
+            Promo: ₦200,000 website · Limited slots
           </div>
           <h1
             style={{
@@ -160,7 +160,7 @@ export function Hero() {
         <div style={{ position: 'relative', minHeight: 380, animation: 'fadeIn 1s ease 0.3s both' }}>
           <div style={{ position: 'absolute', top: 28, left: 28, right: -8, bottom: -8, background: 'var(--bg3)', borderRadius: 20, border: '1px solid var(--border)' }} />
           <div style={{ position: 'absolute', top: 14, left: 14, right: -4, bottom: -4, background: 'var(--bg2)', borderRadius: 20, border: '1px solid var(--border)' }} />
-          <div
+          {/* <div
             style={{
               position: 'relative',
               borderRadius: 20,
@@ -175,7 +175,7 @@ export function Hero() {
               alt="Responsive website shown on laptop, monitor, and phone"
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
-          </div>
+          </div> */}
           <div
             style={{
               position: 'absolute',
