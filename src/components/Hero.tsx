@@ -176,6 +176,28 @@ export function Hero() {
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </div> */}
+
+          {
+            <div
+            style={{
+              position: 'relative',
+              borderRadius: 20,
+              border: '1px solid var(--border)',
+              boxShadow: 'var(--s3)',
+              overflow: 'hidden',
+              background: 'var(--white)',
+            }}
+          >
+            <video
+              src="/promo-vid-hero.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
+          }
           <div
             style={{
               position: 'absolute',

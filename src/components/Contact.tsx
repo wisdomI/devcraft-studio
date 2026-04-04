@@ -137,7 +137,7 @@ export function Contact() {
                   <option value="" disabled>
                     Budget range (optional, ₦)
                   </option>
-                  <option>₦100,000 — Professional (promo)</option>
+                  <option>₦200,000 — Professional (promo)</option>
                   <option>₦350,000 — Business</option>
                   <option>₦650,000 — Premium</option>
                   <option>Custom / not sure yet</option>

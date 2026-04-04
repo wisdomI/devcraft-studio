@@ -314,7 +314,7 @@ export const faqs: Faq[] = [
     a: "Absolutely — redesigns are a speciality. We'll audit your current site and build a faster, clearer version aligned with your goals.",
   },
   {
-    q: 'Is the ₦100,000 promo always available?',
+    q: 'Is the ₦200,000 promo always available?',
     a: 'Promo pricing is limited while slots are open. When the promo ends, the Professional package returns to the regular ₦250,000 rate — we always confirm the current price before you commit.',
   },
 ]

@@ -5,7 +5,7 @@ export function CTABanner() {
       <div style={{ position: 'absolute', bottom: -80, left: -40, width: 260, height: 260, borderRadius: '50%', background: 'rgba(255,255,255,0.04)', pointerEvents: 'none' }} />
       <div style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center', position: 'relative' }}>
         <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: 'white', marginBottom: 16, letterSpacing: -1, lineHeight: 1.1 }}>
-          Get online from <span style={{ color: '#fef08a' }}>₦100,000</span> — limited slots
+          Get online from <span style={{ color: '#fef08a' }}>₦200,000</span> — limited slots
         </h2>
         <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.72)', marginBottom: 36, maxWidth: 520, margin: '0 auto 36px', lineHeight: 1.7 }}>
           Professional websites for Nigerian businesses, schools, and organisations. Message us on WhatsApp or use the form — we&apos;ll confirm your package in Naira.
