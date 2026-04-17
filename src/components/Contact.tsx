@@ -1,7 +1,11 @@
-import { useState, type ChangeEvent, type CSSProperties, type FormEvent } from 'react'
+import { useState, type ChangeEvent, type CSSProperties, type FormEvent, type ImgHTMLAttributes } from 'react'
 import { Label } from './Label'
 
 const FORMSPREE_ID = 'xnjlddag' // Replace with your Formspree form ID
+
+function Image(props: ImgHTMLAttributes<HTMLImageElement>) {
+  return <img {...props} />
+}
 
 
 
@@ -73,9 +77,9 @@ export function Contact() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
             {(
               [
-                { icon: '', label: 'Email', val: 'studios.devcraft@gmail.com', href: 'mailto:studios.devcraft@gmail.com' },
-                { icon: '', label: 'WhatsApp / Phone', val: '+234 705 321 6425', href: 'https://wa.me/+2347053216425' },
-                { icon: '', label: 'Response time', val: 'Usually same day', href: null },
+                { icon: <Image src="/email.svg" alt="Email" width={30} height={30} />, label: 'Email', val: 'studios.devcraft@gmail.com', href: 'mailto:studios.devcraft@gmail.com' },
+                { icon: <Image src="/whatsapp.svg" alt="WhatsApp" width={30} height={30} />, label: 'WhatsApp / Phone', val: '+234 705 321 6425', href: 'https://wa.me/+2347053216425' },
+                { icon: <Image src="/clock.svg" alt="Response time" width={30} height={30} />, label: 'Response time', val: 'Usually same day', href: null },
               ] as const
             ).map(({ icon, label, val, href }) => (
               <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 14 }}>

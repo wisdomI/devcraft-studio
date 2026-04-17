@@ -202,12 +202,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Bloom Wellness',
-    type: 'Small Business',
+    name: 'Eventhub',
+    type: 'Mega Business',
     tag: 'E-commerce + Booking',
     color: 'var(--green)',
     cbg: 'var(--green-l)',
-    desc: 'Wellness studio with class booking, memberships, and an online shop.',
+    desc: 'The Future Of Event Management. Connect clients and vendors seamlessly. Plan, manage, and execute extraordinary events with our all-in-one platform.',
   },
   {
     name: 'FounderOS',
