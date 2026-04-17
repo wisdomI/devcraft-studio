@@ -12,7 +12,7 @@ export function CTABanner() {
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a
-            href="https://wa.me/2347042259026"
+            href="https://wa.me/2347053216425"
             target="_blank"
             rel="noopener noreferrer"
             style={{ background: 'white', color: 'var(--blue)', padding: '15px 36px', borderRadius: 10, fontSize: 15, fontWeight: 700, textDecoration: 'none', transition: 'all 0.2s' }}
