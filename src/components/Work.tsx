@@ -12,8 +12,11 @@ export function Work() {
         <p style={{ fontSize: 17, color: 'var(--ink2)', maxWidth: 500, marginBottom: 56, lineHeight: 1.7 }}>A sample of what we&apos;ve shipped for clients across industries and budgets.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(340px,1fr))', gap: 18 }}>
           {projects.map((p, i) => (
-            <div
+            <a
               key={p.name}
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 background: 'var(--white)',
                 border: '1px solid var(--border)',
@@ -24,6 +27,8 @@ export function Work() {
                 transform: inView ? 'translateY(0)' : 'translateY(24px)',
                 transition: `all 0.5s ${i * 70}ms`,
                 cursor: 'pointer',
+                display: 'block',
+                textDecoration: 'none',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = 'var(--s2)'
@@ -41,7 +46,7 @@ export function Work() {
                   ))}
                 </div>
                 <div style={{ background: 'rgba(255,255,255,0.7)', borderRadius: 4, padding: '3px 10px', fontSize: 11, color: 'var(--ink3)', width: 'fit-content' }}>
-                  {p.name.toLowerCase().replace(/\s/g, '')}.com
+                  {new URL(p.href).host.replace(/^www\./, '')}
                 </div>
                 <div style={{ position: 'absolute', bottom: 14, right: 18, fontFamily: 'var(--serif)', fontSize: 42, fontWeight: 800, color: p.color, opacity: 0.18 }}>{p.name[0]}</div>
               </div>
@@ -53,7 +58,7 @@ export function Work() {
                 <div style={{ fontSize: 11, color: 'var(--ink3)', fontWeight: 600, letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 8 }}>{p.tag}</div>
                 <p style={{ fontSize: 13.5, color: 'var(--ink2)', lineHeight: 1.65 }}>{p.desc}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

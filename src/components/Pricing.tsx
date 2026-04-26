@@ -21,7 +21,7 @@ export function Pricing() {
           <div style={{ fontSize: 12, fontWeight: 800, letterSpacing: 2, opacity: 0.9, marginBottom: 6 }}>ACTIVE PROMO</div>
           <p style={{ fontSize: 16, fontWeight: 600, lineHeight: 1.55, margin: 0 }}>
             Professional website package: <strong style={{ color: '#fef08a' }}>₦{formatNaira(200_000)}</strong> (regular{' '}
-            <span style={{ textDecoration: 'line-through', opacity: 0.85 }}>₦{formatNaira(250_000)}</span>). Start getting customers online in{' '}
+            <span style={{ textDecoration: 'line-through', opacity: 0.85 }}>₦{formatNaira(400_000)}</span>). Start getting customers online in{' '}
             <strong>5–7 days</strong> — <strong>Limited slots available.</strong>
           </p>
         </div>

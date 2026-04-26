@@ -118,7 +118,7 @@ export const plans: Plan[] = [
     tier: 'Limited promo',
     name: 'Professional',
     price: 200_000,
-    compareAtPrice: 250_000,
+    compareAtPrice: 400_000,
     promoBadge: 'LIMITED PROMO',
     ideal: 'Businesses, schools, churches & SMEs — go live fast',
     color: 'var(--blue)',
@@ -142,6 +142,8 @@ export const plans: Plan[] = [
     tier: 'Growing brands',
     name: 'Business',
     price: 450_000,
+    compareAtPrice: 750_000,
+    promoBadge: 'LIMITED PROMO',
     ideal: 'Organisations that need more pages & content',
     color: 'var(--green)',
     cbg: 'var(--green-l)',
@@ -198,6 +200,8 @@ export type Project = {
   color: string
   cbg: string
   desc: string
+  href: string
+  thumbnail: string
 }
 
 export const projects: Project[] = [
@@ -208,22 +212,28 @@ export const projects: Project[] = [
     color: 'var(--green)',
     cbg: 'var(--green-l)',
     desc: 'The Future Of Event Management. Connect clients and vendors seamlessly. Plan, manage, and execute extraordinary events with our all-in-one platform.',
+    href: 'https://eventhub.global',
+    thumbnail: '/projects/eventhub.svg',
   },
   {
-    name: 'FounderOS',
-    type: 'Startup',
-    tag: 'SaaS MVP',
+    name: 'Fetuga Portfolio',
+    type: 'Individual',
+    tag: 'Portfolio',
     color: 'var(--blue)',
     cbg: 'var(--blue-l)',
-    desc: 'OKR and task management platform. Grew to 400 users within 6 weeks of launch.',
+    desc: 'Portfolio website for a digital storyteller and editor. Cinematographer portfolio with full-screen video hero and project gallery. ',
+    href: 'https://deleport.vercel.app/',
+    thumbnail: '/projects/founderos.svg',
   },
   {
-    name: 'Marcus Lee',
+    name: 'Wisdom Iwunwa',
     type: 'Individual',
     tag: 'Portfolio',
     color: 'var(--purple)',
     cbg: 'var(--purple-l)',
-    desc: 'Cinematographer portfolio with full-screen video hero and project gallery.',
+    desc: 'Senior web developer website portfolio. Features unconventional navbar placement, one pager, and seamless animated scrolling. ',
+    href: 'https://wisdom-iwunwa.vercel.app',
+    thumbnail: '/projects/marcus-lee.svg',
   },
   {
     name: 'NorthWave',
@@ -232,6 +242,8 @@ export const projects: Project[] = [
     color: 'var(--orange)',
     cbg: 'var(--orange-l)',
     desc: 'Real-time fleet tracking dashboard with analytics and driver management portal.',
+    href: 'https://northwavee.com',
+    thumbnail: '/projects/northwave.svg',
   },
   {
     name: 'Crunch & Co.',
@@ -240,6 +252,8 @@ export const projects: Project[] = [
     color: 'var(--green)',
     cbg: 'var(--green-l)',
     desc: 'Restaurant site with online ordering, table reservations, and a loyalty programme.',
+    href: 'https://crunchandcoo.com',
+    thumbnail: '/projects/crunch-and-co.svg',
   },
   {
     name: 'DataLens AI',
@@ -248,6 +262,8 @@ export const projects: Project[] = [
     color: 'var(--blue)',
     cbg: 'var(--blue-l)',
     desc: 'AI analytics startup with live product demo, pricing table, and onboarding flow.',
+    href: 'https://datalensaii.com',
+    thumbnail: '/projects/datalens-ai.svg',
   },
 ]
 
@@ -315,6 +331,6 @@ export const faqs: Faq[] = [
   },
   {
     q: 'Is the ₦200,000 promo always available?',
-    a: 'Promo pricing is limited while slots are open. When the promo ends, the Professional package returns to the regular ₦250,000 rate — we always confirm the current price before you commit.',
+    a: 'Promo pricing is limited while slots are open. When the promo ends, the Professional package returns to the regular ₦400,000 rate — we always confirm the current price before you commit.',
   },
 ]

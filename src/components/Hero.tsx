@@ -88,7 +88,7 @@ export function Hero() {
           <p style={{ fontSize: 18, color: 'var(--ink2)', lineHeight: 1.75, maxWidth: 500, marginBottom: 14, fontWeight: 400 }}>
             Start getting customers online in <strong style={{ color: 'var(--ink)' }}>5–7 days</strong>. Full professional package from{' '}
             <strong style={{ color: 'var(--green)' }}>₦200,000</strong>{' '}
-            <span style={{ color: 'var(--ink3)', textDecoration: 'line-through' }}>₦250,000</span> — priced in Nigerian Naira, no surprises.
+            <span style={{ color: 'var(--ink3)', textDecoration: 'line-through' }}>₦400,000</span> — priced in Nigerian Naira, no surprises.
           </p>
           <p style={{ fontSize: 15, color: 'var(--ink3)', lineHeight: 1.65, maxWidth: 500, marginBottom: 36 }}>
             Typical full handover in about two weeks. Serving businesses, startups, schools, churches, and SMEs across Nigeria.
