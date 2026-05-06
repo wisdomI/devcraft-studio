@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type CSSProperties, type FormEvent, type ImgHTMLAttributes } from 'react'
 import { Label } from './Label'
 
-const FORMSPREE_ID = 'xnjlddag' // Replace with your Formspree form ID
+const FORMSPREE_ID = 'xnjlddag' // Formspree form ID
 
 function Image(props: ImgHTMLAttributes<HTMLImageElement>) {
   return <img {...props} />
@@ -10,7 +10,7 @@ function Image(props: ImgHTMLAttributes<HTMLImageElement>) {
 
 
 export function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', type: '', budget: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', number: '', type: '', budget: '', message: '' })
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   const set = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
@@ -209,6 +209,23 @@ export function Contact() {
                       e.target.style.boxShadow = 'none'
                     }}
                   />
+                  <input
+                    name="number"
+                    type="tel"
+                    value={form.number}
+                    onChange={set}
+                    placeholder="Phone number(WhatsApp)"
+                    required
+                    style={inp}
+                    onFocus={(e) => {
+                      e.target.style.borderColor = 'var(--blue)'
+                      e.target.style.boxShadow = '0 0 0 3px var(--blue-m)'
+                    }}
+                    onBlur={(e) => {
+                      e.target.style.borderColor = 'var(--border)'
+                      e.target.style.boxShadow = 'none'
+                    }}
+                  />
                 </div>
 
                 <select
@@ -236,7 +253,7 @@ export function Contact() {
                 >
                   <option value="" disabled>Budget range (optional, ₦)</option>
                   <option>₦200,000 — Professional (promo)</option>
-                  <option>₦400,000 — Business</option>
+                  <option>₦450,000 — Business</option>
                   <option>Premium</option>
                   <option>Custom / not sure yet</option>
                 </select>
